@@ -1,0 +1,78 @@
+ #portfolio{
+    padding-top: 1.2rem;
+    height: auto;
+ }
+ .portfolio__container{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+ }
+
+ .portfolio__item{
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+ }
+ .portfolio__item #btn1 {
+    background: var(--color-bg);
+ }
+
+ .portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+ }
+ .portfolio__item:hover #btn1{
+    background: var(--color-bg-variant);
+    color: var(--color-white);
+ }
+ .portfolio__item #btn1:hover{
+    color: var(--color-bg);
+ }
+
+ .portfolio__item-image{
+    height: 115px;
+    object-fit: none;
+    border-radius: 1.5rem;
+    overflow: hidden;
+ }
+
+ .portfolio__item h3 {
+    margin: 1.2rem 0 2rem;
+ }
+ .portfolio__item-cta{
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+ }
+ /* ============== MEDIUM DEVICES =============== */
+
+@media screen and (max-width:1200px) {
+   .portfolio__item-image{
+      width: auto;
+   }
+   .portfolio__container{
+      padding-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+   }
+}
+
+/* ============== SMALL DEVICES =============== */
+
+@media screen and (max-width:670px) {
+   .portfolio__item-image{
+      height: 192px;
+   }
+   .portfolio__container{
+      padding-top: 1rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.5rem;
+      transition: var(--transition);
+   }
+}

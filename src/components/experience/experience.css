@@ -1,0 +1,113 @@
+#experience {
+    padding-top: 2rem;
+    height: auto;
+}
+
+.experience__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.experience__container > div {
+    background: linear-gradient(rgba(9, 50, 0, 0.983),black,rgba(9, 50, 0, 0.983));
+    margin-top: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 4rem;
+    border: 2px solid transparent;
+    border-color: var(--color-primary);
+    border-width: .2px;
+    border-style: solid;
+    transition: var(--transition);
+}
+
+.experience__container > div:hover {
+    background: linear-gradient(black,transparent,black);
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+.experience__container > div h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-white);
+}
+
+.experience__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.experience__details {
+    display: flex;
+    gap: 1rem;
+}
+
+.experience__details:hover {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+.experience__details:hover > .experience__details-icon {
+    color: var(--color-white);
+    transition: var(--transition);
+}
+.experience__details:hover small {
+    color: var(--color-primary-variant);
+    transition: var(--transition);
+}
+
+.experience__details-icon {
+    margin-top: 6px;
+    color: var(--color-primary);
+}
+
+.experience__frontend:hover h3 {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+.experience__backend:hover h3 {
+    color: var(--color-primary);
+    transition: var(--transition);
+}
+
+/* ============== MEDIUM DEVICES =============== */
+
+@media screen and (max-width:1200px) {
+    #experience{
+        height: 90vh;
+    }
+    .experience__container{
+        padding-top: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .experience__container > div {
+        padding: 1.2rem;
+        margin: 0 auto;
+    }
+    .experience__content{
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ============== SMALL DEVICES =============== */
+
+@media screen and (max-width:800px) {
+    #experience{
+        height: 140vh;
+    }
+    .experience__container{
+        padding-top: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .experience__content{
+        padding: 0rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+

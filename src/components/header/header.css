@@ -1,0 +1,133 @@
+header {
+    height: 100vh;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: hidden;
+}
+
+.cta {
+    margin-top: 0rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    right: 58rem;
+    left: 20rem;
+    bottom: 5rem;
+}
+
+.header__socials::before {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.header__socials::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+.me {
+    background: repeating-linear-gradient(-45deg, var(--color-primary), black 50px);
+    width: 17rem;
+    height: 20rem;
+    position: absolute;
+    left: calc(50% - 8.5rem);
+    margin-top: 2rem;
+    border-radius: 0 10rem 0 10rem;
+    overflow: hidden;
+    padding: 1rem 0rem 1.5rem 2rem;
+}
+
+.scroll__down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 10rem;
+    left: 45rem;
+    gap: 0rem;
+    bottom: 9rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.scroll__down::before {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    transform: rotate(270deg);
+    background: var(--color-primary);
+}
+
+.scroll__down::after {
+    content: "";
+    width: 1px;
+    height: 2rem;
+    transform: rotate(270deg);
+    background: var(--color-primary);
+}
+
+/* ============== MEDIUM DEVICES =============== */
+
+@media screen and (max-width:1028px) {
+    .header {
+        height: 68vh;
+    }
+    .cta{
+        margin-top: -1rem;
+    }
+    .me {
+        margin-top: 1rem;
+        border-radius: 10rem 0 10rem 0;
+        transition: var(--transition);
+    }
+
+    .header__socials {
+        gap: 0rem;
+        left: 10rem;
+    }
+
+    .scroll__down {
+        right: 1rem;
+        left: 30rem;
+    }
+}
+
+/* ============== SMALL DEVICES =============== */
+
+@media screen and (max-width:670px) {
+    .header {
+        height: 100vh;
+    }
+
+    .me {
+        width: 15rem;
+        height: 18.5rem;
+        left: calc(50% - 7.5rem);
+        border-radius: 10rem 10rem 0 0;
+        padding: 2rem 0rem 1rem 1rem;
+        transition: var(--transition);
+    }
+
+    .header__socials,
+    .scroll__down {
+        display: none;
+    }
+}
