@@ -1,0 +1,89 @@
+nav {
+    background: linear-gradient(transparent, var(--color-bg-variant), transparent);
+    width: max-content;
+    padding: 2rem 0.2rem;
+    z-index: 2;
+    position: fixed;
+    left: 6%;
+    transform: translateX(-50%);
+    bottom: 12rem;
+    display: block;
+    gap: -5rem;
+    border-color: var(--color-primary);
+    border-width: .2px;
+    border-style: solid;
+    border-radius: 2.5rem 0rem 2.5rem 0rem;
+    backdrop-filter: blur(15px);
+}
+
+nav a {
+    color: var(--color-light);
+    display: flex;
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background: var(--color-primary);
+    color: var(--color-bg);
+    font-size: 1.6rem;
+    transform: rotate(360deg);
+}
+
+/* ============== MEDIUM DEVICES =============== */
+
+@media screen and (max-width:1028px) {
+    nav {
+        padding: 0.5rem 0.5rem;
+    }
+
+    nav a {
+        color: var(--color-light);
+        background: transparent;
+        padding: 0.6rem;
+        border-radius: 50%;
+        display: flex;
+        font-size: 1.4rem;
+    }
+
+    nav a:hover {
+        background: var(--color-primary-variant);
+        color: var(--color-bg);
+        font-size: 1.6rem;
+        transform: rotate(360deg);
+    }
+}
+
+/* ============== SMALL DEVICES =============== */
+
+@media screen and (max-width:670px) {
+    nav {
+        background: rgb(0, 0, 0, 0.3);
+        padding: 0rem 0.5rem;
+        height: max-content;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 2rem;
+        display: flex;
+        gap: 2rem;
+        border-radius: 2.5rem 0rem 2.5rem 0rem;
+        backdrop-filter: blur(15px);
+    }
+
+    nav a {
+        background: transparent;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        color: var(--color-primary);
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        background: var(--color-primary);
+        color: var(--color-bg-variant);
+        font-size: 1.4rem;
+    }
+}
