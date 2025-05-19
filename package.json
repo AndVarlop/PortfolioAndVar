@@ -1,9 +1,9 @@
 {
-  "name": "portfolioandvar",
+  "name": "portfolioavarela",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://andvarlop.github.io/PortfolioAndVar",
+  "homepage": "https://andvarlop.github.io/PortfolioAVarela",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
