@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/portfolio",
-            "index": "src/index.html",
+            "index": "src/index.jsx",
             "baseHref": "https://andvarlop.github.io/PortfolioAndVar/",
             "main": "src/main.ts",
             "polyfills": [
