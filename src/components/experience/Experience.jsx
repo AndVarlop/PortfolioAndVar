@@ -62,23 +62,6 @@ const Experience = () => {
             </article>
           </div>
         </div>
-        <div className="experience__work">
-          <h3>Work</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h2>Informatica y Tributos</h2>
-                <h4>Tecnologo de Soporte Operativo</h4>
-                <h6>Julio 2024 - Actualidad</h6>
-                <small className='text-light'>- Brindo soporte técnico operativo a los procesos internos de la empresa, asegurando el correcto funcionamiento de sistemas y herramientas utilizadas por los equipos administrativos y financieros.
-                    <br />- Gestiono incidencias técnicas, realizo mantenimiento preventivo y correctivo de equipos y participo en la mejora continua de procesos tecnológicos.
-                    <br />- Apoyo en la implementación y monitoreo de soluciones informáticas orientadas a optimizar la productividad del área Treasury y otras áreas operativas.
-                    <br />- Colaboro en la administración de enlaces a servidores de clientes, garantizando seguridad, eficiencia y control de acceso.</small>
-              </div>
-            </article>
-          </div>
-        </div>
         <div className="experience__backend">
           <h3>BackEnd<br/>Development</h3>
           <div className="experience__content">
@@ -126,8 +109,23 @@ const Experience = () => {
             </article>
           </div>
         </div>
-
       </div>
+      <div className="container experience__container_alone">
+          <div className="experience__content_alone">
+            <h3>WORK EXPERIENCE</h3>
+            <article className="experience__details">
+              <div>
+                <h2>Informatica y Tributos</h2><br />
+                <h4>Tecnologo de Soporte Operativo</h4>
+                <h6>Julio 2024 - Actualidad</h6>
+                <small className='text-light'>- Brindo soporte técnico operativo a los procesos internos de la empresa, asegurando el correcto funcionamiento de sistemas y herramientas utilizadas por los equipos administrativos y financieros.
+                    <br />- Gestiono incidencias técnicas, realizo mantenimiento preventivo y correctivo de equipos y participo en la mejora continua de procesos tecnológicos.
+                    <br />- Apoyo en la implementación y monitoreo de soluciones informáticas orientadas a optimizar la productividad del área Treasury y otras áreas operativas.
+                    <br />- Colaboro en la administración de enlaces a servidores de clientes, garantizando seguridad, eficiencia y control de acceso.</small>
+              </div>
+            </article>
+          </div>
+        </div>
     </section>
   )
 }

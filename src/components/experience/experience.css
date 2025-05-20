@@ -9,10 +9,28 @@
     gap: 2rem;
 }
 
+.experience__container_alone{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
 .experience__container > div {
     background: linear-gradient(rgba(9, 50, 0, 0.983),black,rgba(9, 50, 0, 0.983));
     margin-top: 2rem;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
+    border-radius: 4rem;
+    border: 2px solid transparent;
+    border-color: var(--color-primary);
+    border-width: .2px;
+    border-style: solid;
+    transition: var(--transition);
+}
+
+.experience__container_alone > div {
+    background: linear-gradient(rgba(9, 50, 0, 0.983),black,rgba(9, 50, 0, 0.983));
+    margin-top: 2rem;
+    padding: 2rem 2rem;
     border-radius: 4rem;
     border: 2px solid transparent;
     border-color: var(--color-primary);
@@ -29,6 +47,15 @@
     transition: var(--transition);
 }
 
+.experience__container_alone > div:hover {
+    background: linear-gradient(black,transparent,black);
+    border-color: var(--color-primary-variant);
+    cursor: default;
+    border-radius: 2rem;
+    transition: var(--transition);
+}
+
+
 .experience__container > div h3 {
     font-size: 1.6rem;
     text-align: center;
@@ -36,9 +63,31 @@
     color: var(--color-white);
 }
 
+.experience__container_alone > div h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+.experience__container_alone > div h4,h6 {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--color-white);
+}
+
+
 .experience__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.experience__content_alone {
+    display: grid;
+    grid-template-columns: 1fr;
     row-gap: 1rem;
     column-gap: 1rem;
 }
@@ -79,7 +128,9 @@
 
 @media screen and (max-width:1200px) {
     #experience{
-        height: 90vh;
+        padding-top: 8rem;
+        height: 200vh;
+        padding-bottom: 20rem;
     }
     .experience__container{
         padding-top: 2rem;
@@ -99,7 +150,8 @@
 
 @media screen and (max-width:800px) {
     #experience{
-        height: 140vh;
+        padding-top: 6rem;
+        height: 260vh;
     }
     .experience__container{
         padding-top: 1rem;
