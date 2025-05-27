@@ -10,7 +10,7 @@ const contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_xvvllzi','template_xgc2pzq', form.current, 'xHMjLPCD6KlMqp82s')
+    emailjs.sendForm('service_r1w45o8','template_tjy0m4d', form.current, 'xHMjLPCD6KlMqp82s')
     e.target.reset();
   };
   return (
