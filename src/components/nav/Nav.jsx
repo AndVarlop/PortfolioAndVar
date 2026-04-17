@@ -17,9 +17,9 @@ const Nav = () => {
   const links = [
     { href: '#about', label: t.nav.about },
     { href: '#experience', label: t.nav.experience },
-    { href: '#education', label: t.nav.education },
-    { href: '#services', label: t.nav.services },
     { href: '#portfolio', label: t.footer.portfolio },
+    { href: '#services', label: t.nav.services },
+    { href: '#education', label: t.nav.education },
     { href: '#contact', label: t.nav.contact },
   ]
 

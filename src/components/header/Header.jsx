@@ -4,7 +4,7 @@ import ME from '../../assets/me1.png'
 import CV from '../../assets/Andvar_cv.pdf'
 import HeaderSocials from './HeaderSocials'
 import { FaArrowDown } from 'react-icons/fa6'
-import { FiDownload, FiMessageCircle } from 'react-icons/fi'
+import { FiDownload, FiMessageCircle, FiMapPin } from 'react-icons/fi'
 import { useLanguage } from '../../context/useLanguage'
 import useTypewriter from '../../hooks/useTypewriter'
 
@@ -29,7 +29,17 @@ const Header = () => {
             <span className='hero__title-prefix'>/&gt;</span>
           </div>
 
-          <p className='hero__tagline'>{t.about.bio}</p>
+          <p className='hero__tagline'>{t.header.tagline}</p>
+
+          <div className='hero__meta'>
+            <span className='hero__meta-item'>
+              <FiMapPin /> {t.header.location}
+            </span>
+            <span className='hero__meta-item hero__meta-item--status'>
+              <span className='hero__meta-dot'></span>
+              {t.header.available}
+            </span>
+          </div>
 
           <div className='hero__actions'>
             <a href={CV} download className='btn btn-primary'>
@@ -50,10 +60,10 @@ const Header = () => {
             <img src={ME} alt='Andres Varela' />
             <div className='hero__badge hero__badge--top'>
               <span className='hero__badge-dot'></span>
-              Available
+              Open to work
             </div>
             <div className='hero__badge hero__badge--bottom'>
-              <span>⚡</span> 10+ Projects
+              <span>🚀</span> Full-Stack Engineer
             </div>
           </div>
         </div>

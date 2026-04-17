@@ -5,8 +5,16 @@ export const translations = {
       services: 'Services', education: 'Education', contact: 'Contact'
     },
     header: {
-      greeting: "Hello, I'm",
-      titles: ['Full-Stack Developer', 'Systems Engineer', 'Back-End Developer', 'Front-End Developer'],
+      greeting: "Hi, I'm",
+      titles: [
+        'Full-Stack Engineer',
+        'Systems Engineer',
+        'Java & Node.js Developer',
+        'React & Angular Developer'
+      ],
+      tagline: "Systems Engineer crafting scalable enterprise software — specialized in Java, React, Angular & Oracle PL/SQL. I turn complex business requirements into clean, production-ready code.",
+      location: 'Barranquilla, Colombia',
+      available: 'Open to opportunities · Remote / Hybrid',
       downloadCV: 'Download CV',
       letsTalk: "Let's Talk",
       scrollDown: 'Scroll Down'
@@ -14,49 +22,49 @@ export const translations = {
     about: {
       subtitle: 'Get To Know',
       title: 'About Me',
-      english: 'B2 English',
-      englishSub: '5+ Years',
-      references: 'References',
-      referencesSub: '5+ Worldwide',
-      projects: 'Projects',
-      projectsSub: '10+ Completed',
-      bio: "Systems Engineer specialized in Full-Stack development of scalable enterprise applications. I led the architecture and development of a payroll system using Java for the Back-End, Angular and React for dynamic interfaces, and Oracle PL/SQL for robust data management. Results-oriented professional with strong adaptability to emerging technologies, ethical commitment, and the ability to transform business requirements into efficient software through collaborative work.",
+      english: '2+ Year',
+      englishSub: 'Industry Exp.',
+      references: '10+',
+      referencesSub: 'Projects Delivered',
+      projects: 'B2 English',
+      projectsSub: 'Certified Level',
+      bio: "Systems Engineer specializing in scalable Full-Stack enterprise solutions. I led the full architecture and development of a payroll system using Java for the Back-End, Angular & React for dynamic interfaces, and Oracle PL/SQL for robust data management. A results-driven professional who adapts quickly to new technologies and translates complex business requirements into clean, maintainable, high-quality software — built through agile collaboration.",
       cta: "Let's Talk"
     },
     experience: {
       subtitle: 'What I Do',
       title: 'My Experience',
-      frontend: 'FrontEnd',
-      backend: 'BackEnd',
+      frontend: 'Frontend Skills',
+      backend: 'Backend Skills',
       work: 'Work Experience',
-      experienced: 'Experienced',
-      intermediate: 'Intermediate',
-      basic: 'Basic',
+      experienced: 'Expert',
+      intermediate: 'Proficient',
+      basic: 'Familiar',
       company: 'Informatica y Tributos S.A.S',
       roles: [
         {
           title: 'Development Engineer',
           date: '2025 – Present',
           items: [
-            'Designed, implemented, and maintained new features in backend and frontend applications, aligned with product requirements.',
-            'Wrote clean, modular, well-documented code following software engineering best practices and quality standards.',
-            'Reviewed peer code via pull requests to ensure quality, security, and maintainability of the codebase.',
-            'Analyzed technical requirements with the product team and translated them into viable, scalable technical solutions.',
-            'Implemented and maintained automated unit, integration, and end-to-end tests to strengthen software quality.',
-            'Diagnosed and resolved bugs, performance bottlenecks, and issues in production environments.',
-            'Participated in agile ceremonies (dailies, plannings, refinements, retrospectives) to improve planning and execution.',
-            'Collaborated with DevOps to automate deployments, integrate CI pipelines, and configure service monitoring.'
+            'Design, implement, and maintain new features across backend and frontend applications aligned with product requirements.',
+            'Write clean, modular, well-documented code following software engineering best practices and quality standards.',
+            'Conduct peer code reviews via pull requests to ensure quality, security, and codebase maintainability.',
+            'Analyze technical requirements with the product team and translate them into scalable, viable technical solutions.',
+            'Implement and maintain automated unit, integration, and end-to-end tests to strengthen software reliability.',
+            'Diagnose and resolve bugs, performance bottlenecks, and production environment issues.',
+            'Actively participate in Agile ceremonies — dailies, sprint planning, refinements, and retrospectives.',
+            'Collaborate with DevOps to automate deployments, integrate CI/CD pipelines, and configure service monitoring.'
           ]
         },
         {
           title: 'Client Support Engineer',
           date: '2024 – 2025',
           items: [
-            'Attended technical client inquiries via email, chat, and phone, maintaining high satisfaction levels.',
-            'Diagnosed and resolved software and hardware incidents using monitoring and ticketing tools.',
-            'Documented problems and solutions in detail in the internal knowledge base for future reuse.',
-            'Reproduced reported errors in test environments to identify root causes and viable solutions.',
-            'Trained end-users through remote demonstrations and training sessions on platform usage.'
+            'Handled technical client inquiries via email, chat, and phone while maintaining high satisfaction scores.',
+            'Diagnosed and resolved software and hardware incidents using monitoring tools and ticketing systems.',
+            'Documented problems and solutions thoroughly in the internal knowledge base for team-wide reuse.',
+            'Reproduced reported errors in test environments to identify root causes and deliver viable fixes.',
+            'Trained end-users through remote demonstrations and structured onboarding sessions on platform usage.'
           ]
         }
       ]
@@ -66,27 +74,27 @@ export const translations = {
       title: 'Services',
       cards: [
         {
-          title: 'UI/UX Design',
+          title: 'Frontend Engineering',
           items: [
-            'Experience in both FrontEnd and BackEnd development.',
-            'Skilled in the visual design aspect of web applications.',
-            'Patient and persistent — always finding the best possible solution.'
+            'Responsive, high-performance UIs built with React and Angular.',
+            'Component-driven architecture, clean code, and pixel-perfect implementation.',
+            'Accessibility, cross-browser compatibility, and UX-first development.'
           ]
         },
         {
-          title: 'Team Work',
+          title: 'Backend Development',
           items: [
-            'Excellent worker both in a team and independently.',
-            'Strong organizer and activity distributor for better team output.',
-            'Lead by example to inspire others to excel at work.'
+            'Scalable REST APIs and server-side logic with Java and Node.js.',
+            'Database design and management with Oracle PL/SQL and MySQL.',
+            'CI/CD integration, performance tuning, and production-grade reliability.'
           ]
         },
         {
-          title: 'Web Development',
+          title: 'Full-Stack Solutions',
           items: [
-            'Experience creating web pages in both design and logic.',
-            'Detail-oriented: dedicated to providing the best user experience.',
-            'Portfolio of diverse projects covering frontend and backend.'
+            'End-to-end development from database schema to deployed product.',
+            'Agile collaboration — code reviews, sprint planning, and on-time delivery.',
+            'Fast ramp-up on new stacks, frameworks, and business domains.'
           ]
         }
       ]
@@ -99,55 +107,81 @@ export const translations = {
       degrees: [
         {
           title: 'Systems Engineer',
-          place: 'Universidad Simón Bolívar, Barranquilla',
+          place: 'Universidad Simón Bolívar — Barranquilla',
           date: '2025',
-          desc: 'Comprehensive focus on planning and managing innovative computational solutions. Experience implementing AI tools to optimize decision-making and automate operational processes.'
+          desc: 'Focused on planning and managing innovative computational solutions. Experienced in applying AI tools to optimize decision-making and automate operational processes. Strong analytical mindset oriented toward organizational efficiency and technical quality standards.'
         },
         {
-          title: 'Foreign Language (English)',
-          place: 'Universidad Simón Bolívar, Barranquilla',
+          title: 'Bachelor in Foreign Language (English)',
+          place: 'Universidad Simón Bolívar — Barranquilla',
           date: '2023',
-          desc: 'Bachelor in Foreign Language (English) with outstanding average grade.'
+          desc: 'Graduated with an outstanding GPA. B2 English proficiency (Advanced) — enables seamless collaboration with international teams and direct reading of technical documentation.'
         },
         {
-          title: 'Master in JavaScript: JS, jQuery, Angular, Node.js',
-          place: 'Udemy Online Courses',
+          title: 'Master in JavaScript: JS, jQuery, Angular & Node.js',
+          place: 'Udemy — Online',
           date: '2026',
-          desc: 'Full-Stack Web Development specialist with advanced mastery of the JavaScript ecosystem — dynamic interfaces with Angular and jQuery, scalable server architectures with Node.js.'
+          desc: 'Advanced mastery of the full JavaScript ecosystem: dynamic interfaces with Angular & jQuery, scalable server architectures with Node.js, and complete lifecycle management of modern web applications with a focus on performance and UX.'
         }
       ],
       certs: [
         {
           title: 'PCAP: Programming Essentials in Python',
-          place: 'Cisco Networking Academy (Cisco/Pearson)'
+          place: 'Cisco Networking Academy · Cisco / Pearson',
+          desc: 'Foundational Python programming: data structures, functions, OOP, and scripting best practices.'
         },
         {
           title: 'NSE 2 Network Security Associate',
-          place: 'Fortinet'
+          place: 'Fortinet',
+          desc: 'Core network security concepts: threat landscape, firewall technologies, and cybersecurity fundamentals.'
         },
         {
-          title: 'Artificial Intelligence for Productivity',
-          place: 'Corporación Educativa del Prado, Barranquilla',
-          desc: 'Practical specialization in process automation and workflow optimization using AI tools.'
+          title: 'AI for Productivity — Diplomado',
+          place: 'Corporación Educativa del Prado — Barranquilla',
+          desc: 'Practical specialization in process automation and workflow optimization using AI tools. Applied AI fundamentals for data-driven decision-making and operational efficiency improvement.'
         }
       ]
     },
     portfolio: {
       subtitle: 'My Recent Work',
       title: 'Portfolio',
-      github: 'Github',
+      github: 'GitHub',
       liveDemo: 'Live Demo',
       projects: [
-        { title: 'Auditapp', desc: 'Document auditing system with user management and reporting.', tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS'] },
-        { title: 'Alexandra Reposteria', desc: 'Full bakery business website with product catalog and ordering.', tech: ['HTML', 'CSS', 'JavaScript'] },
-        { title: 'ZonaABC', desc: 'Educational platform with learning resources and interactive content.', tech: ['HTML', 'CSS', 'PHP', 'MySQL'] },
-        { title: 'AndVarPictures', desc: 'Personal photography gallery with categorized collections.', tech: ['HTML', 'CSS', 'JavaScript'] },
-        { title: 'Blog', desc: 'Personal blog with article management and categories.', tech: ['HTML', 'CSS', 'PHP'] },
-        { title: 'Object Detector', desc: 'Real-time AI-powered object detection using TensorFlow.js.', tech: ['JavaScript', 'TensorFlow.js'] }
+        {
+          title: 'Auditapp',
+          desc: 'Document auditing system with role-based user management, audit trails, and automated reporting.',
+          tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS']
+        },
+        {
+          title: 'Alexandra Repostería',
+          desc: 'Full business website for a bakery — product catalog, custom orders, and responsive design.',
+          tech: ['HTML', 'CSS', 'JavaScript']
+        },
+        {
+          title: 'ZonaABC',
+          desc: 'Educational platform with structured learning resources, interactive content, and student progress tracking.',
+          tech: ['HTML', 'CSS', 'PHP', 'MySQL']
+        },
+        {
+          title: 'AndVarPictures',
+          desc: 'Personal photography portfolio with categorized galleries and a clean, immersive viewing experience.',
+          tech: ['HTML', 'CSS', 'JavaScript']
+        },
+        {
+          title: 'Blog',
+          desc: 'Content management blog with article authoring, category filtering, and an SEO-friendly structure.',
+          tech: ['HTML', 'CSS', 'PHP']
+        },
+        {
+          title: 'Object Detector',
+          desc: 'Real-time AI-powered object detection running in the browser using TensorFlow.js and a webcam feed.',
+          tech: ['JavaScript', 'TensorFlow.js']
+        }
       ]
     },
     testimonials: {
-      subtitle: 'Reviews From Colleagues',
+      subtitle: 'What Colleagues Say',
       title: 'Testimonials'
     },
     contact: {
@@ -158,7 +192,7 @@ export const translations = {
       whatsapp: 'WhatsApp',
       sendMessage: 'Send a message',
       namePlaceholder: 'Your Full Name',
-      emailPlaceholder: 'Your Email',
+      emailPlaceholder: 'Your Email Address',
       messagePlaceholder: 'Your Message',
       sendBtn: 'Send Message'
     },
@@ -166,7 +200,7 @@ export const translations = {
       home: 'Home', about: 'About', experience: 'Experience',
       services: 'Services', portfolio: 'Portfolio', education: 'Education',
       testimonials: 'Testimonials', contact: 'Contact',
-      copyright: '© AndVarLop Portfolio. All rights reserved.'
+      copyright: '© 2026 Andres Varela Lopez. All rights reserved.'
     }
   },
 
@@ -177,57 +211,65 @@ export const translations = {
     },
     header: {
       greeting: 'Hola, soy',
-      titles: ['Desarrollador Full-Stack', 'Ingeniero de Sistemas', 'Desarrollador Back-End', 'Desarrollador Front-End'],
+      titles: [
+        'Ingeniero Full-Stack',
+        'Ingeniero de Sistemas',
+        'Desarrollador Java & Node.js',
+        'Desarrollador React & Angular'
+      ],
+      tagline: "Ingeniero de Sistemas construyendo software empresarial escalable — especializado en Java, React, Angular y Oracle PL/SQL. Convierto requerimientos complejos en código limpio y listo para producción.",
+      location: 'Barranquilla, Colombia',
+      available: 'Abierto a oportunidades · Remoto / Híbrido',
       downloadCV: 'Descargar CV',
       letsTalk: 'Hablemos',
-      scrollDown: 'Desplázate'
+      scrollDown: 'Ver más'
     },
     about: {
       subtitle: 'Conóceme',
       title: 'Sobre Mí',
-      english: 'Inglés B2',
-      englishSub: '5+ Años',
-      references: 'Referencias',
-      referencesSub: '5+ Mundiales',
-      projects: 'Proyectos',
-      projectsSub: '10+ Completados',
-      bio: "Ingeniero de Sistemas especializado en el desarrollo Full-Stack de soluciones empresariales escalables. Lideré la arquitectura y desarrollo de un sistema de nómina utilizando Java para el Back-End, Angular y React para interfaces dinámicas, y Oracle PL/SQL para una gestión robusta de datos. Profesional orientado a resultados, con alta capacidad de adaptación a tecnologías emergentes, compromiso ético y habilidad para transformar requerimientos de negocio en software eficiente mediante el trabajo colaborativo.",
+      english: '2+ Año',
+      englishSub: 'Exp. Profesional',
+      references: '10+',
+      referencesSub: 'Proyectos Entregados',
+      projects: 'Inglés B2',
+      projectsSub: 'Nivel Certificado',
+      bio: "Ingeniero de Sistemas especializado en soluciones Full-Stack escalables para el sector empresarial. Lideré la arquitectura y desarrollo completo de un sistema de nómina usando Java en el Back-End, Angular y React para interfaces dinámicas, y Oracle PL/SQL para una gestión robusta de datos. Profesional orientado a resultados con alta capacidad de adaptación a tecnologías emergentes y habilidad para traducir requerimientos complejos en software limpio, mantenible y de alta calidad mediante el trabajo colaborativo y ágil.",
       cta: 'Hablemos'
     },
     experience: {
       subtitle: 'Lo Que Hago',
       title: 'Mi Experiencia',
-      frontend: 'FrontEnd',
-      backend: 'BackEnd',
+      frontend: 'Habilidades Frontend',
+      backend: 'Habilidades Backend',
       work: 'Experiencia Laboral',
       experienced: 'Experto',
-      intermediate: 'Intermedio',
-      basic: 'Básico',
+      intermediate: 'Competente',
+      basic: 'Familiarizado',
       company: 'Informatica y Tributos S.A.S',
       roles: [
         {
           title: 'Ingeniero de Desarrollo',
           date: '2025 – Actualidad',
           items: [
-            'Diseñé, implementé y mantuve nuevas funcionalidades en aplicaciones backend y frontend, alineadas con los requerimientos del producto.',
-            'Escribí código limpio, modular y bien documentado, siguiendo buenas prácticas de ingeniería de software y estándares de calidad.',
-            'Revisé código de pares mediante pull requests para asegurar calidad, seguridad y mantenibilidad en la base de código.',
-            'Analicé requerimientos técnicos junto al equipo de producto y los traduje en soluciones técnicas viables y escalables.',
-            'Implementé y mantuve pruebas automatizadas unitarias, de integración y end-to-end para reforzar la calidad del software.',
-            'Diagnostiqué y resolví bugs, cuellos de botella de rendimiento y problemas en entornos productivos.',
-            'Participé activamente en ceremonias ágiles (dailies, plannings, refinamientos y retrospectivas de sprint).',
-            'Colaboré con equipos de DevOps para automatizar despliegues, integrar CI y configurar el monitoreo de servicios.'
+            'Diseño, implemento y mantengo nuevas funcionalidades en aplicaciones backend y frontend alineadas con los requerimientos del producto.',
+            'Escribo código limpio, modular y bien documentado, siguiendo buenas prácticas de ingeniería de software y estándares de calidad.',
+            'Reviso código de pares mediante pull requests para asegurar calidad, seguridad y mantenibilidad del código.',
+            'Analizo requerimientos técnicos con el equipo de producto y los traduzco en soluciones escalables y viables.',
+            'Implemento y mantengo pruebas automatizadas unitarias, de integración y end-to-end para reforzar la calidad del software.',
+            'Diagnostico y resuelvo bugs, cuellos de botella de rendimiento y problemas en entornos productivos.',
+            'Participo activamente en ceremonias ágiles: dailies, plannings, refinamientos y retrospectivas de sprint.',
+            'Colaboro con DevOps para automatizar despliegues, integrar pipelines de CI/CD y configurar el monitoreo de servicios.'
           ]
         },
         {
           title: 'Ingeniero de Soporte al Cliente',
           date: '2024 – 2025',
           items: [
-            'Atendí consultas técnicas de clientes vía correo, chat y teléfono manteniendo altos niveles de satisfacción.',
-            'Diagnostiqué y resolví incidencias de software y hardware utilizando herramientas de monitorización y tickets.',
-            'Documenté detalladamente problemas y soluciones en la base de conocimiento interna para reutilización futura.',
+            'Atendí consultas técnicas de clientes por correo, chat y teléfono manteniendo altos niveles de satisfacción.',
+            'Diagnostiqué y resolví incidencias de software y hardware con herramientas de monitorización y tickets.',
+            'Documenté problemas y soluciones en la base de conocimiento interna para reutilización del equipo.',
             'Reproduje errores reportados en entornos de prueba para identificar causas raíz y soluciones viables.',
-            'Capacité a usuarios finales mediante demostraciones remotas y sesiones formativas sobre uso de la plataforma.'
+            'Capacité a usuarios finales mediante demostraciones remotas y sesiones de onboarding sobre la plataforma.'
           ]
         }
       ]
@@ -237,27 +279,27 @@ export const translations = {
       title: 'Servicios',
       cards: [
         {
-          title: 'Diseño UI/UX',
+          title: 'Ingeniería Frontend',
           items: [
-            'Experiencia en desarrollo FrontEnd y BackEnd.',
-            'Habilidad en el aspecto visual del diseño de aplicaciones web.',
-            'Paciente y persistente — siempre encontrando la mejor solución posible.'
+            'Interfaces responsivas de alto rendimiento con React y Angular.',
+            'Arquitectura de componentes, código limpio e implementación pixel-perfect.',
+            'Accesibilidad, compatibilidad cross-browser y desarrollo centrado en UX.'
           ]
         },
         {
-          title: 'Trabajo en Equipo',
+          title: 'Desarrollo Backend',
           items: [
-            'Excelente trabajador tanto en equipo como de forma independiente.',
-            'Gran organizador y distribuidor de actividades para mejor rendimiento.',
-            'Lidero con el ejemplo para inspirar a otros a mejorar y sobresalir.'
+            'APIs REST escalables y lógica de servidor con Java y Node.js.',
+            'Diseño y gestión de bases de datos con Oracle PL/SQL y MySQL.',
+            'Integración CI/CD, optimización de rendimiento y fiabilidad en producción.'
           ]
         },
         {
-          title: 'Desarrollo Web',
+          title: 'Soluciones Full-Stack',
           items: [
-            'Experiencia creando páginas web, tanto en diseño como en lógica.',
-            'Detallista: dedicado a brindar la mejor experiencia de usuario.',
-            'Portafolio de proyectos cubriendo frontend y backend.'
+            'Desarrollo end-to-end desde el esquema de base de datos hasta el producto desplegado.',
+            'Colaboración ágil: code reviews, sprint planning y entrega a tiempo.',
+            'Rápida adaptación a nuevos stacks, frameworks y dominios de negocio.'
           ]
         }
       ]
@@ -270,56 +312,82 @@ export const translations = {
       degrees: [
         {
           title: 'Ingeniero de Sistemas',
-          place: 'Universidad Simón Bolívar, Barranquilla',
+          place: 'Universidad Simón Bolívar — Barranquilla',
           date: '2025',
-          desc: 'Enfoque integral en la planeación y gestión de soluciones computacionales innovadoras. Experiencia en herramientas de IA para optimizar la toma de decisiones y automatizar procesos operativos.'
+          desc: 'Enfoque integral en la planeación y gestión de soluciones computacionales innovadoras. Experiencia en herramientas de IA para optimizar la toma de decisiones y automatizar procesos. Alta capacidad analítica orientada a la eficiencia organizacional y al desarrollo de software con estándares de calidad técnica.'
         },
         {
-          title: 'Lengua Extranjera (Inglés)',
-          place: 'Universidad Simón Bolívar, Barranquilla',
+          title: 'Licenciatura en Lengua Extranjera (Inglés)',
+          place: 'Universidad Simón Bolívar — Barranquilla',
           date: '2023',
-          desc: 'Licenciatura en Lengua Extranjera (Inglés), con promedio sobresaliente.'
+          desc: 'Egresado con promedio sobresaliente. Nivel de inglés B2 (Avanzado) — permite colaborar con equipos internacionales y leer documentación técnica directamente en inglés.'
         },
         {
-          title: 'Máster en JavaScript: JS, jQuery, Angular, Node.js',
-          place: 'Udemy Online Courses',
+          title: 'Máster en JavaScript: JS, jQuery, Angular y Node.js',
+          place: 'Udemy — Online',
           date: '2026',
-          desc: 'Especialista en Desarrollo Web Full-Stack con dominio avanzado del ecosistema JavaScript — interfaces dinámicas con Angular y jQuery, arquitecturas de servidor escalables con Node.js.'
+          desc: 'Dominio avanzado del ecosistema JavaScript completo: interfaces dinámicas con Angular y jQuery, arquitecturas de servidor escalables con Node.js, y gestión del ciclo de vida completo de aplicaciones web modernas con foco en rendimiento y experiencia de usuario.'
         }
       ],
       certs: [
         {
           title: 'PCAP: Programming Essentials in Python',
-          place: 'Cisco Networking Academy (Cisco/Pearson)'
+          place: 'Cisco Networking Academy · Cisco / Pearson',
+          desc: 'Programación Python fundamental: estructuras de datos, funciones, POO y buenas prácticas de scripting.'
         },
         {
           title: 'NSE 2 Network Security Associate',
-          place: 'Fortinet'
+          place: 'Fortinet',
+          desc: 'Conceptos esenciales de seguridad en redes: paisaje de amenazas, tecnologías de firewall y fundamentos de ciberseguridad.'
         },
         {
-          title: 'Inteligencia Artificial para la Productividad',
-          place: 'Corporación Educativa del Prado, Barranquilla',
-          desc: 'Especialización práctica en automatización de procesos y optimización de flujos de trabajo mediante IA.'
+          title: 'Diplomado en IA para la Productividad',
+          place: 'Corporación Educativa del Prado — Barranquilla',
+          desc: 'Especialización práctica en automatización de procesos y optimización de flujos con herramientas de IA. Fundamentos de IA aplicada para la toma de decisiones basada en datos y mejora de la eficiencia operativa.'
         }
       ]
     },
     portfolio: {
       subtitle: 'Mi Trabajo Reciente',
       title: 'Portafolio',
-      github: 'Github',
+      github: 'GitHub',
       liveDemo: 'Demo en Vivo',
       projects: [
-        { title: 'Auditapp', desc: 'Sistema de auditoría de documentos con gestión de usuarios y reportes.', tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS'] },
-        { title: 'Alexandra Reposteria', desc: 'Sitio web completo para negocio de repostería con catálogo y pedidos.', tech: ['HTML', 'CSS', 'JavaScript'] },
-        { title: 'ZonaABC', desc: 'Plataforma educativa con recursos de aprendizaje y contenido interactivo.', tech: ['HTML', 'CSS', 'PHP', 'MySQL'] },
-        { title: 'AndVarPictures', desc: 'Galería fotográfica personal con colecciones categorizadas.', tech: ['HTML', 'CSS', 'JavaScript'] },
-        { title: 'Blog', desc: 'Blog personal con gestión de artículos y categorías.', tech: ['HTML', 'CSS', 'PHP'] },
-        { title: 'Object Detector', desc: 'Detección de objetos en tiempo real con IA usando TensorFlow.js.', tech: ['JavaScript', 'TensorFlow.js'] }
+        {
+          title: 'Auditapp',
+          desc: 'Sistema de auditoría documental con gestión de usuarios por roles, trazabilidad y reportes automatizados.',
+          tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS']
+        },
+        {
+          title: 'Alexandra Repostería',
+          desc: 'Sitio web empresarial para pastelería — catálogo de productos, pedidos personalizados y diseño responsivo.',
+          tech: ['HTML', 'CSS', 'JavaScript']
+        },
+        {
+          title: 'ZonaABC',
+          desc: 'Plataforma educativa con recursos de aprendizaje estructurados, contenido interactivo y seguimiento de progreso.',
+          tech: ['HTML', 'CSS', 'PHP', 'MySQL']
+        },
+        {
+          title: 'AndVarPictures',
+          desc: 'Portafolio fotográfico personal con galerías categorizadas y una experiencia de visualización limpia e inmersiva.',
+          tech: ['HTML', 'CSS', 'JavaScript']
+        },
+        {
+          title: 'Blog',
+          desc: 'Blog con gestión de contenido, redacción de artículos, filtrado por categorías y estructura SEO-friendly.',
+          tech: ['HTML', 'CSS', 'PHP']
+        },
+        {
+          title: 'Object Detector',
+          desc: 'Detección de objetos en tiempo real con IA directamente en el navegador usando TensorFlow.js y cámara web.',
+          tech: ['JavaScript', 'TensorFlow.js']
+        }
       ]
     },
     testimonials: {
-      subtitle: 'Reseñas de Colegas',
-      title: 'Testimoniales'
+      subtitle: 'Lo Que Dicen Mis Colegas',
+      title: 'Testimonios'
     },
     contact: {
       subtitle: 'Ponte En Contacto',
@@ -336,8 +404,8 @@ export const translations = {
     footer: {
       home: 'Inicio', about: 'Sobre Mí', experience: 'Experiencia',
       services: 'Servicios', portfolio: 'Portafolio', education: 'Educación',
-      testimonials: 'Testimoniales', contact: 'Contacto',
-      copyright: '© Portafolio AndVarLop. Todos los derechos reservados.'
+      testimonials: 'Testimonios', contact: 'Contacto',
+      copyright: '© 2026 Andres Varela Lopez. Todos los derechos reservados.'
     }
   }
 }

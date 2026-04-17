@@ -1,9 +1,9 @@
 import React from 'react'
 import './services.css'
-import { FiCheck, FiLayout, FiUsers, FiGlobe } from 'react-icons/fi'
+import { FiCheck, FiMonitor, FiServer, FiLayers } from 'react-icons/fi'
 import { useLanguage } from '../../context/useLanguage'
 
-const icons = [<FiLayout />, <FiUsers />, <FiGlobe />]
+const icons = [<FiMonitor />, <FiServer />, <FiLayers />]
 
 const Services = () => {
   const { t } = useLanguage()

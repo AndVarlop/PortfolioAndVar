@@ -7,17 +7,17 @@ import { useLanguage } from '../../context/useLanguage'
 const frontendSkills = [
   { name: 'HTML', level: 'experienced' },
   { name: 'CSS', level: 'experienced' },
-  { name: 'JavaScript', level: 'intermediate' },
+  { name: 'JavaScript', level: 'experienced' },
+  { name: 'TypeScript', level: 'experienced' },
   { name: 'React', level: 'intermediate' },
   { name: 'Angular', level: 'intermediate' },
-  { name: 'jQuery', level: 'intermediate' },
-  { name: 'Bootstrap', level: 'experienced' }
+  { name: 'jQuery', level: 'intermediate' }
 ]
 
 const backendSkills = [
-  { name: 'Java', level: 'intermediate' },
-  { name: 'Node.js', level: 'intermediate' },
+  { name: 'Java', level: 'experienced' },
   { name: 'PHP', level: 'experienced' },
+  { name: 'Node.js', level: 'intermediate' },
   { name: 'Python', level: 'intermediate' },
   { name: 'Oracle PL/SQL', level: 'intermediate' },
   { name: 'MySQL', level: 'intermediate' }
@@ -27,19 +27,34 @@ const Experience = () => {
   const { t } = useLanguage()
   const ex = t.experience
 
-  const levelLabel = (l) =>
-    l === 'experienced' ? ex.experienced : l === 'intermediate' ? ex.intermediate : ex.basic
+  const getLevelPercent = (level) => {
+    switch (level) {
+      case 'experienced': return 100
+      case 'intermediate': return 60
+      case 'basic': return 30
+      default: return 0
+    }
+  }
+
+  const SkillBar = ({ skill }) => (
+    <div className='skill-bar'>
+      <div className='skill-bar__header'>
+        <span className='skill-bar__name'>{skill.name}</span>
+        <span className='skill-bar__level'>{skill.level === 'experienced' ? 'Expert' : skill.level === 'intermediate' ? 'Proficient' : 'Familiar'}</span>
+      </div>
+      <div className='skill-bar__track'>
+        <div
+          className='skill-bar__fill'
+          style={{ width: `${getLevelPercent(skill.level)}%` }}
+        ></div>
+      </div>
+    </div>
+  )
 
   const SkillList = ({ items }) => (
-    <div className='experience__content'>
+    <div className='experience__skills'>
       {items.map(s => (
-        <article key={s.name} className='experience__details'>
-          <BsPatchCheckFill className='experience__details-icon' />
-          <div>
-            <h4>{s.name}</h4>
-            <small className='text-light'>{levelLabel(s.level)}</small>
-          </div>
-        </article>
+        <SkillBar key={s.name} skill={s} />
       ))}
     </div>
   )

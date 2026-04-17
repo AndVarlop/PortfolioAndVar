@@ -116,6 +116,38 @@
     max-width: 520px;
 }
 
+.hero__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.78rem;
+}
+
+.hero__meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-muted);
+}
+
+.hero__meta-item svg {
+    color: var(--color-primary);
+}
+
+.hero__meta-item--status {
+    color: var(--color-white);
+}
+
+.hero__meta-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 10px #10b981;
+    animation: pulse 2s infinite;
+}
+
 .hero__actions {
     display: flex;
     gap: 0.8rem;
