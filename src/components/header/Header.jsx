@@ -5,7 +5,7 @@ import CV from '../../assets/Andvar_cv.pdf'
 import HeaderSocials from './HeaderSocials'
 import { FaArrowDown } from 'react-icons/fa6'
 import { FiDownload, FiMessageCircle } from 'react-icons/fi'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 import useTypewriter from '../../hooks/useTypewriter'
 
 const Header = () => {

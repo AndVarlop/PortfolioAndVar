@@ -4,7 +4,7 @@ import ME from '../../assets/imagen_2023-07-07_115529443.png'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 
 const StatCard = ({ icon, label, sublabel, delay }) => {
   const [visible, setVisible] = useState(false)
@@ -52,9 +52,9 @@ const About = () => {
 
           <div className='about__content'>
             <div className='about__cards'>
-              <StatCard icon={<FaAward />}         label={ab.english}    sublabel={ab.englishSub}    delay={0} />
-              <StatCard icon={<FiUsers />}          label={ab.references} sublabel={ab.referencesSub} delay={150} />
-              <StatCard icon={<VscFolderLibrary />} label={ab.projects}   sublabel={ab.projectsSub}   delay={300} />
+              <StatCard icon={<FaAward />} label={ab.english} sublabel={ab.englishSub} delay={0} />
+              <StatCard icon={<FiUsers />} label={ab.references} sublabel={ab.referencesSub} delay={150} />
+              <StatCard icon={<VscFolderLibrary />} label={ab.projects} sublabel={ab.projectsSub} delay={300} />
             </div>
             <p className='about__bio'>{ab.bio}</p>
             <a href='#contact' className='btn btn-primary'>{ab.cta}</a>

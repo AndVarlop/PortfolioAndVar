@@ -3,7 +3,7 @@ import './footer.css'
 import { FaFacebookF, FaGithub } from 'react-icons/fa'
 import { FiInstagram } from 'react-icons/fi'
 import { BsLinkedin, BsTwitter } from 'react-icons/bs'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 
 const Footer = () => {
   const { t } = useLanguage()

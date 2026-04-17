@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './nav.css'
 import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 
 const Nav = () => {
   const { lang, t, toggleLang } = useLanguage()
@@ -15,12 +15,12 @@ const Nav = () => {
   }, [])
 
   const links = [
-    { href: '#about',      label: t.nav.about },
+    { href: '#about', label: t.nav.about },
     { href: '#experience', label: t.nav.experience },
-    { href: '#education',  label: t.nav.education },
-    { href: '#services',   label: t.nav.services },
-    { href: '#portfolio',  label: t.footer.portfolio },
-    { href: '#contact',    label: t.nav.contact },
+    { href: '#education', label: t.nav.education },
+    { href: '#services', label: t.nav.services },
+    { href: '#portfolio', label: t.footer.portfolio },
+    { href: '#contact', label: t.nav.contact },
   ]
 
   const close = () => setOpen(false)

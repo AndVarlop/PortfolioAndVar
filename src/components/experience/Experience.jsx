@@ -2,25 +2,25 @@ import React from 'react'
 import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import { FiBriefcase } from 'react-icons/fi'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 
 const frontendSkills = [
-  { name: 'HTML',       level: 'experienced' },
-  { name: 'CSS',        level: 'experienced' },
+  { name: 'HTML', level: 'experienced' },
+  { name: 'CSS', level: 'experienced' },
   { name: 'JavaScript', level: 'intermediate' },
-  { name: 'React',      level: 'intermediate' },
-  { name: 'Angular',    level: 'intermediate' },
-  { name: 'jQuery',     level: 'intermediate' },
-  { name: 'Bootstrap',  level: 'experienced' }
+  { name: 'React', level: 'intermediate' },
+  { name: 'Angular', level: 'intermediate' },
+  { name: 'jQuery', level: 'intermediate' },
+  { name: 'Bootstrap', level: 'experienced' }
 ]
 
 const backendSkills = [
-  { name: 'Java',        level: 'intermediate' },
-  { name: 'Node.js',     level: 'intermediate' },
-  { name: 'PHP',         level: 'experienced' },
-  { name: 'Python',      level: 'intermediate' },
+  { name: 'Java', level: 'intermediate' },
+  { name: 'Node.js', level: 'intermediate' },
+  { name: 'PHP', level: 'experienced' },
+  { name: 'Python', level: 'intermediate' },
   { name: 'Oracle PL/SQL', level: 'intermediate' },
-  { name: 'MySQL',       level: 'intermediate' }
+  { name: 'MySQL', level: 'intermediate' }
 ]
 
 const Experience = () => {
