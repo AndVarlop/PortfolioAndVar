@@ -112,6 +112,13 @@ section {
     margin-bottom: 3rem;
 }
 
+.accent {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
 .text-light {
     color: var(--color-light);
 }
