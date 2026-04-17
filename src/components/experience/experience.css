@@ -11,7 +11,7 @@
 }
 
 .experience__block {
-    background: linear-gradient(rgba(9, 50, 0, 0.983), black, rgba(9, 50, 0, 0.983));
+    background: linear-gradient(rgba(0, 27, 50, 0.983), black, rgba(0, 27, 50, 0.983));
     padding: 2rem;
     border-radius: 2rem;
     border: 1px solid var(--color-primary);
@@ -82,7 +82,7 @@
 }
 
 .work-item {
-    background: linear-gradient(rgba(9, 50, 0, 0.95), black);
+    background: linear-gradient(rgba(0, 27, 50, 0.95), black);
     border: 1px solid var(--color-primary);
     border-radius: 1.5rem;
     padding: 1.75rem 2rem;

@@ -13,32 +13,32 @@
 
 :root {
     /* Core */
-    --color-bg:              #021b02;
-    --color-bg-variant:      #2d6c2c;
-    --color-bg-2:            #051f05;
-    --color-bg-3:            #0a2e0a;
+    --color-bg: #0b1220;
+    --color-bg-variant: #101a2f;
+    --color-bg-2: #0f172a;
+    --color-bg-3: #05070d;
 
     /* Surface */
-    --color-surface:         rgba(9, 50, 0, 0.5);
-    --color-surface-hover:   rgba(9, 50, 0, 0.7);
-    --color-border:          rgba(43, 255, 0, 0.15);
+    --color-surface: rgba(255, 255, 255, 0.04);
+    --color-surface-hover: rgba(255, 255, 255, 0.07);
+    --color-border: rgba(148, 163, 184, 0.18);
 
     /* Text */
-    --color-white:           #fff;
-    --color-light:           rgba(255, 255, 255, 0.6);
-    --color-muted:           rgba(255, 255, 255, 0.45);
+    --color-white: #fff;
+    --color-light: rgba(226, 232, 240, 0.7);
+    --color-muted: rgba(226, 232, 240, 0.55);
 
     /* Primary */
-    --color-primary:         #2bff00d3;
-    --color-primary-variant: rgba(154, 255, 77, 0.4);
-    --color-primary-2:       #00e5ff;
-    --color-accent:          #00e5ff;
-    --color-primary-soft:    rgba(43, 255, 0, 0.1);
+    --color-primary: #60a5fa;
+    --color-primary-variant: rgba(96, 165, 250, 0.25);
+    --color-primary-2: #a78bfa;
+    --color-accent: #22d3ee;
+    --color-primary-soft: rgba(96, 165, 250, 0.12);
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #2bff00d3, #00e5ff);
-    --gradient-text:    linear-gradient(135deg, #2bff00d3, #00e5ff);
-    --gradient-bg:      linear-gradient(180deg, #021b02, #000 100%);
+    --gradient-primary: linear-gradient(135deg, #60a5fa, #a78bfa);
+    --gradient-text: linear-gradient(135deg, #60a5fa, #a78bfa);
+    --gradient-bg: linear-gradient(180deg, #0b1220, #05070d 100%);
 
     /* Radii */
     --radius-sm: 0.4rem;
@@ -46,34 +46,39 @@
     --radius-lg: 1.25rem;
 
     /* Shadows */
-    --shadow-sm:   0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md:   0 4px 20px rgba(0, 0, 0, 0.4);
-    --shadow-glow: 0 0 20px rgba(43, 255, 0, 0.25);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 24px rgba(96, 165, 250, 0.22);
 
     /* Layout */
-    --transition:          all 400ms ease;
-    --container-width-lg:  75%;
-    --container-width-md:  86%;
-    --container-width-sm:  90%;
+    --transition: all 400ms ease;
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
     max-width: 100% !important;
     overflow-x: hidden !important;
 }
 
-::-webkit-scrollbar { display: none; }
+::-webkit-scrollbar {
+    display: none;
+}
 
 body {
     font-family: "Poppins", sans-serif;
-    background: var(--color-bg);
+    background:
+        radial-gradient(900px circle at 12% 10%, rgba(96, 165, 250, 0.12), transparent 55%),
+        radial-gradient(700px circle at 88% 18%, rgba(167, 139, 250, 0.10), transparent 60%),
+        var(--gradient-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
 }
 
 .container {
@@ -107,14 +112,18 @@ section {
     margin-bottom: 3rem;
 }
 
-.text-light { color: var(--color-light); }
+.text-light {
+    color: var(--color-light);
+}
 
 a {
     color: var(--color-primary);
     transition: var(--transition);
 }
 
-a:hover { color: var(--color-white); }
+a:hover {
+    color: var(--color-white);
+}
 
 .btn {
     display: inline-flex;
@@ -157,11 +166,18 @@ img {
 
 /* ============== MEDIUM DEVICES =============== */
 @media screen and (max-width:1024px) {
-    .container { width: var(--container-width-md); }
-    section { margin-top: 6rem; }
+    .container {
+        width: var(--container-width-md);
+    }
+
+    section {
+        margin-top: 6rem;
+    }
 }
 
 /* ============== SMALL DEVICES =============== */
 @media screen and (max-width:600px) {
-    .container { width: var(--container-width-sm); }
+    .container {
+        width: var(--container-width-sm);
+    }
 }
