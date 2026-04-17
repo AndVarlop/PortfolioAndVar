@@ -1,131 +1,93 @@
 import React from 'react'
 import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
+import { FiBriefcase } from 'react-icons/fi'
+import { useLanguage } from '../../context/LanguageContext'
+
+const frontendSkills = [
+  { name: 'HTML',       level: 'experienced' },
+  { name: 'CSS',        level: 'experienced' },
+  { name: 'JavaScript', level: 'intermediate' },
+  { name: 'React',      level: 'intermediate' },
+  { name: 'Angular',    level: 'intermediate' },
+  { name: 'jQuery',     level: 'intermediate' },
+  { name: 'Bootstrap',  level: 'experienced' }
+]
+
+const backendSkills = [
+  { name: 'Java',        level: 'intermediate' },
+  { name: 'Node.js',     level: 'intermediate' },
+  { name: 'PHP',         level: 'experienced' },
+  { name: 'Python',      level: 'intermediate' },
+  { name: 'Oracle PL/SQL', level: 'intermediate' },
+  { name: 'MySQL',       level: 'intermediate' }
+]
 
 const Experience = () => {
+  const { t } = useLanguage()
+  const ex = t.experience
+
+  const levelLabel = (l) =>
+    l === 'experienced' ? ex.experienced : l === 'intermediate' ? ex.intermediate : ex.basic
+
+  const SkillList = ({ items }) => (
+    <div className='experience__content'>
+      {items.map(s => (
+        <article key={s.name} className='experience__details'>
+          <BsPatchCheckFill className='experience__details-icon' />
+          <div>
+            <h4>{s.name}</h4>
+            <small className='text-light'>{levelLabel(s.level)}</small>
+          </div>
+        </article>
+      ))}
+    </div>
+  )
+
   return (
     <section id='experience'>
-      <h3>What Skills I Have</h3>
-      <h2>My Experience</h2>
-      <div className="container experience__container">
-        <div className="experience__work">
-          <h3>FrontEnd<br/>Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>HTML</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>CSS</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>JavaScript</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Boostrap</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Angular</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>JQuery</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
+      <div className='container'>
+        <span className='section__eyebrow'>{ex.subtitle}</span>
+        <h2 className='section__title'>
+          <span className='accent'>{ex.title}</span>
+        </h2>
+
+        <div className='experience__container'>
+          <div className='experience__block'>
+            <h3>{ex.frontend}</h3>
+            <SkillList items={frontendSkills} />
+          </div>
+          <div className='experience__block'>
+            <h3>{ex.backend}</h3>
+            <SkillList items={backendSkills} />
           </div>
         </div>
-        <div className="experience__backend">
-          <h3>BackEnd<br/>Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Node JS</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>PHP</h4>
-                <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Java</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>Python</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>MyAdmin</h4>
-                <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className='experience__details-icon' />
-              <div>
-                <h4>MySql</h4>
-                <small className='text-light'>Basic</small>
-              </div>
-            </article>
+
+        <div className='experience__work'>
+          <h3 className='experience__work-title'>
+            <FiBriefcase /> {ex.work}
+          </h3>
+          <div className='experience__timeline'>
+            {ex.roles.map((role, i) => (
+              <article key={i} className='work-item'>
+                <div className='work-item__head'>
+                  <h4>{role.title}</h4>
+                  <span className='work-item__date'>{role.date}</span>
+                </div>
+                <p className='work-item__company'>{ex.company}</p>
+                <ul className='work-item__list'>
+                  {role.items.map((it, j) => (
+                    <li key={j}>
+                      <BsPatchCheckFill className='work-item__icon' />
+                      <span>{it}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
           </div>
         </div>
       </div>
-      <div className="container experience__container_alone">
-          <div className="experience__content_alone">
-            <h3>WORK EXPERIENCE</h3>
-            <article className="experience__details">
-              <div>
-                <h2>Informatica y Tributos</h2><br />
-                <h4>Tecnologo de Soporte Operativo</h4>
-                <h6>Julio 2024 - Actualidad</h6>
-                <small className='text-light'>- I provide operational technical support for the company's internal processes, ensuring the proper functioning of the systems and tools used by the administrative and financial teams. 
-                  - I manage technical incidents, perform preventive and corrective maintenance on equipment, and participate in the continuous improvement of technological processes. 
-                  - I support the implementation and monitoring of IT solutions aimed at optimizing the productivity of the Treasury department and other operational areas. 
-                  - I collaborate in the management of links to client servers, ensuring security, efficiency, and access control.</small>
-              </div>
-            </article>
-          </div>
-        </div>
     </section>
   )
 }

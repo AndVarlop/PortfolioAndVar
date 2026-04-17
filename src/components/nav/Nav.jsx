@@ -1,20 +1,61 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './nav.css'
-import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
-import {BiLibrary, BiSolidContact, BiSolidUser} from 'react-icons/bi'
-import {MdMiscellaneousServices, MdOutlineHomeWork} from 'react-icons/md'
-import {ImHome3} from 'react-icons/im'
+import { HiOutlineMenu, HiOutlineX } from 'react-icons/hi'
+import { useLanguage } from '../../context/LanguageContext'
 
-const nav = () => {
+const Nav = () => {
+  const { lang, t, toggleLang } = useLanguage()
+  const [scrolled, setScrolled] = useState(false)
+  const [open, setOpen] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 30)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  const links = [
+    { href: '#about',      label: t.nav.about },
+    { href: '#experience', label: t.nav.experience },
+    { href: '#education',  label: t.nav.education },
+    { href: '#services',   label: t.nav.services },
+    { href: '#portfolio',  label: t.footer.portfolio },
+    { href: '#contact',    label: t.nav.contact },
+  ]
+
+  const close = () => setOpen(false)
+
   return (
-    <nav>
-        <a href="#"><ImHome3 /></a>
-        <a href="#about"><BiSolidUser /></a>
-        <a href="#experience"><BiLibrary /></a>
-        <a href="#services"><MdMiscellaneousServices /></a>
-        <a href="#contact"><BiSolidContact /></a>
+    <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+      <div className='navbar__inner'>
+        <a href='#' className='navbar__logo'>
+          <span className='navbar__logo-mark'>AV</span>
+          <span className='navbar__logo-text'>AndVarLop</span>
+        </a>
+
+        <ul className={`navbar__links ${open ? 'is-open' : ''}`}>
+          {links.map(l => (
+            <li key={l.href}>
+              <a href={l.href} onClick={close}>{l.label}</a>
+            </li>
+          ))}
+        </ul>
+
+        <div className='navbar__actions'>
+          <button className='lang-toggle' onClick={toggleLang} title='Switch language'>
+            {lang === 'en' ? 'ES' : 'EN'}
+          </button>
+          <button
+            className='navbar__burger'
+            onClick={() => setOpen(o => !o)}
+            aria-label='Toggle menu'
+          >
+            {open ? <HiOutlineX /> : <HiOutlineMenu />}
+          </button>
+        </div>
+      </div>
     </nav>
   )
 }
 
-export default nav
+export default Nav
