@@ -7,17 +7,17 @@ import IMG2 from '../../assets/Fondo2.jpg'
 import IMG3 from '../../assets/Fondo3.jpg'
 import IMG4 from '../../assets/Fondo4.jpg'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 
 const images = [Auditapp, Reposteria, ZonaABC, IMG2, IMG3, IMG4]
 
 const links = [
-  { github: 'https://github.com/AndVarlop/AUDITAPP/',              demo: 'https://andvarlop.github.io/AUDITAPP/' },
-  { github: 'https://github.com/AndVarlop/AlexandraReposteria1/',  demo: 'https://andvarlop.github.io/AlexandraReposteria1/' },
-  { github: 'https://github.com/AndVarlop/ZonaABC',                demo: 'https://andvarlop.github.io/ZonaABC/' },
-  { github: 'https://github.com/AndVarlop',                        demo: 'https://andvarlop.github.io/AndVarPictures/' },
-  { github: 'https://github.com/AndVarlop',                        demo: 'https://andvarlop.github.io/Blog/' },
-  { github: 'https://github.com/AndVarlop',                        demo: 'https://andvarlop.github.io/DetectorAndVar/' },
+  { github: 'https://github.com/AndVarlop/AUDITAPP/', demo: 'https://andvarlop.github.io/AUDITAPP/' },
+  { github: 'https://github.com/AndVarlop/AlexandraReposteria1/', demo: 'https://andvarlop.github.io/AlexandraReposteria1/' },
+  { github: 'https://github.com/AndVarlop/ZonaABC', demo: 'https://andvarlop.github.io/ZonaABC/' },
+  { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/AndVarPictures/' },
+  { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/Blog/' },
+  { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/DetectorAndVar/' },
 ]
 
 const Portfolio = () => {

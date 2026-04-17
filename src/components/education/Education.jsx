@@ -1,7 +1,7 @@
 import React from 'react'
 import './education.css'
 import { FiBookOpen, FiAward } from 'react-icons/fi'
-import { useLanguage } from '../../context/LanguageContext'
+import { useLanguage } from '../../context/useLanguage'
 
 const Education = () => {
   const { t } = useLanguage()
