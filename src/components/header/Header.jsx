@@ -1,7 +1,8 @@
 import React from 'react'
 import './header.css'
 import ME from '../../assets/me1.png'
-import CV from '../../assets/Andvar_cv.pdf'
+import CV_ES from '../../assets/AndVar_CV_ES.pdf'
+import CV_EN from '../../assets/AndVar_CV_EN.pdf'
 import HeaderSocials from './HeaderSocials'
 import { FaArrowDown } from 'react-icons/fa6'
 import { FiDownload, FiMessageCircle, FiMapPin } from 'react-icons/fi'
@@ -9,8 +10,11 @@ import { useLanguage } from '../../context/useLanguage'
 import useTypewriter from '../../hooks/useTypewriter'
 
 const Header = () => {
-  const { t } = useLanguage()
+  const { lang, t } = useLanguage()
   const typedTitle = useTypewriter(t.header.titles)
+
+  const cvFile = lang === 'es' ? CV_ES : CV_EN
+  const cvName = lang === 'es' ? 'AndVar_CV_ES.pdf' : 'AndVar_CV_EN.pdf'
 
   return (
     <header id='home' className='hero'>
@@ -42,7 +46,7 @@ const Header = () => {
           </div>
 
           <div className='hero__actions'>
-            <a href={CV} download className='btn btn-primary'>
+            <a href={cvFile} download={cvName} className='btn btn-primary'>
               <FiDownload /> {t.header.downloadCV}
             </a>
             <a href='#contact' className='btn'>
