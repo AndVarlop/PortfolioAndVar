@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './about.css'
-import ME from '../../assets/imagen_2023-07-07_115529443.png'
+import ME from '../../assets/About_Item.jpeg'
 import { FiBriefcase, FiFolder, FiGlobe } from 'react-icons/fi'
 import { useLanguage } from '../../context/useLanguage'
 

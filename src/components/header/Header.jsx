@@ -1,6 +1,6 @@
 import React from 'react'
 import './header.css'
-import ME from '../../assets/me1.png'
+import ME from '../../assets/AndVar_Item.png'
 import CV_ES from '../../assets/AndVar_CV_ES.pdf'
 import CV_EN from '../../assets/AndVar_CV_EN.pdf'
 import HeaderSocials from './HeaderSocials'
