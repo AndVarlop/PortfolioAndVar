@@ -149,6 +149,11 @@ export const translations = {
       liveDemo: 'Live Demo',
       projects: [
         {
+          title: 'MeloPictures',
+          desc: 'Personal photography portfolio with categorized galleries and a clean, immersive viewing experience.',
+          tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
+        },
+        {
           title: 'Auditapp',
           desc: 'Document auditing system with role-based user management, audit trails, and automated reporting.',
           tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS']
@@ -162,11 +167,6 @@ export const translations = {
           title: 'ZonaABC',
           desc: 'Educational platform with structured learning resources, interactive content, and student progress tracking.',
           tech: ['HTML', 'CSS', 'PHP', 'MySQL']
-        },
-        {
-          title: 'AndVarPictures',
-          desc: 'Personal photography portfolio with categorized galleries and a clean, immersive viewing experience.',
-          tech: ['HTML', 'CSS', 'JavaScript']
         },
         {
           title: 'Blog',
@@ -354,6 +354,11 @@ export const translations = {
       liveDemo: 'Demo en Vivo',
       projects: [
         {
+          title: 'MeloPictures',
+          desc: 'Portafolio fotográfico personal con galerías categorizadas y una experiencia de visualización limpia e inmersiva.',
+          tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
+        },
+        {
           title: 'Auditapp',
           desc: 'Sistema de auditoría documental con gestión de usuarios por roles, trazabilidad y reportes automatizados.',
           tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JS']
@@ -367,11 +372,6 @@ export const translations = {
           title: 'ZonaABC',
           desc: 'Plataforma educativa con recursos de aprendizaje estructurados, contenido interactivo y seguimiento de progreso.',
           tech: ['HTML', 'CSS', 'PHP', 'MySQL']
-        },
-        {
-          title: 'AndVarPictures',
-          desc: 'Portafolio fotográfico personal con galerías categorizadas y una experiencia de visualización limpia e inmersiva.',
-          tech: ['HTML', 'CSS', 'JavaScript']
         },
         {
           title: 'Blog',

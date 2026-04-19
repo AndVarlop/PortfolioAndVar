@@ -1,21 +1,21 @@
 import React from 'react'
 import './portfolio.css'
-import Auditapp from '../../assets/Auditapp.png'
+import Auditapp from '../../assets/Auditapp.jpg'
 import Reposteria from '../../assets/Reposteria.png'
 import ZonaABC from '../../assets/ZonaABC.png'
-import IMG2 from '../../assets/Fondo2.jpg'
+import MeloPictures from '../../assets/MeloPictures.png'
 import IMG3 from '../../assets/Fondo3.jpg'
 import IMG4 from '../../assets/Fondo4.jpg'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import { useLanguage } from '../../context/useLanguage'
 
-const images = [Auditapp, Reposteria, ZonaABC, IMG2, IMG3, IMG4]
+const images = [MeloPictures, Auditapp, Reposteria, ZonaABC, IMG3, IMG4]
 
 const links = [
+  { github: 'https://github.com/AndVarlop/MeloPictures', demo: 'https://andvarlop.github.io/MeloPictures/' },
   { github: 'https://github.com/AndVarlop/AUDITAPP/', demo: 'https://andvarlop.github.io/AUDITAPP/' },
   { github: 'https://github.com/AndVarlop/AlexandraReposteria1/', demo: 'https://andvarlop.github.io/AlexandraReposteria1/' },
   { github: 'https://github.com/AndVarlop/ZonaABC', demo: 'https://andvarlop.github.io/ZonaABC/' },
-  { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/AndVarPictures/' },
   { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/Blog/' },
   { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/DetectorAndVar/' },
 ]
