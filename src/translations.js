@@ -149,6 +149,11 @@ export const translations = {
       liveDemo: 'Live Demo',
       projects: [
         {
+          title: 'La Caleta',
+          desc: 'Manage your money with La Caleta, track your account balances, log your expenses and income, and keep your finances organized with this personal financial management app.',
+          tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
+        },
+        {
           title: 'MeloPictures',
           desc: 'Personal photography portfolio with categorized galleries and a clean, immersive viewing experience.',
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
@@ -168,11 +173,7 @@ export const translations = {
           desc: 'Educational platform with structured learning resources, interactive content, and student progress tracking.',
           tech: ['HTML', 'CSS', 'PHP', 'MySQL']
         },
-        {
-          title: 'Blog',
-          desc: 'Content management blog with article authoring, category filtering, and an SEO-friendly structure.',
-          tech: ['HTML', 'CSS', 'PHP']
-        },
+
         {
           title: 'Object Detector',
           desc: 'Real-time AI-powered object detection running in the browser using TensorFlow.js and a webcam feed.',
@@ -354,6 +355,11 @@ export const translations = {
       liveDemo: 'Demo en Vivo',
       projects: [
         {
+          title: 'La Caleta',
+          desc: 'Administra tu dinero con La Caleta, observa el balance de tus cuentas, registra tus gastos e ingresos, y mantén tus finanzas organizadas con esta aplicación de gestión financiera personal.',
+          tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
+        },
+        {
           title: 'MeloPictures',
           desc: 'Portafolio fotográfico personal con galerías categorizadas y una experiencia de visualización limpia e inmersiva.',
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
@@ -373,11 +379,7 @@ export const translations = {
           desc: 'Plataforma educativa con recursos de aprendizaje estructurados, contenido interactivo y seguimiento de progreso.',
           tech: ['HTML', 'CSS', 'PHP', 'MySQL']
         },
-        {
-          title: 'Blog',
-          desc: 'Blog con gestión de contenido, redacción de artículos, filtrado por categorías y estructura SEO-friendly.',
-          tech: ['HTML', 'CSS', 'PHP']
-        },
+
         {
           title: 'Object Detector',
           desc: 'Detección de objetos en tiempo real con IA directamente en el navegador usando TensorFlow.js y cámara web.',

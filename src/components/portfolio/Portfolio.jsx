@@ -4,19 +4,19 @@ import Auditapp from '../../assets/Auditapp.jpg'
 import Reposteria from '../../assets/Reposteria.png'
 import ZonaABC from '../../assets/ZonaABC.png'
 import MeloPictures from '../../assets/MeloPictures.png'
-import IMG3 from '../../assets/Fondo3.jpg'
+import LaCaleta from '../../assets/Captura-LaCaleta.png'
 import IMG4 from '../../assets/Fondo4.jpg'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import { useLanguage } from '../../context/useLanguage'
 
-const images = [MeloPictures, Auditapp, Reposteria, ZonaABC, IMG3, IMG4]
+const images = [LaCaleta, MeloPictures, Auditapp, Reposteria, ZonaABC, IMG4]
 
 const links = [
+  { github: 'https://github.com/AndVarlop/La-Caleta', demo: 'https://andvarlop.github.io/La-Caleta/' },
   { github: 'https://github.com/AndVarlop/MeloPictures', demo: 'https://andvarlop.github.io/MeloPictures/' },
   { github: 'https://github.com/AndVarlop/AUDITAPP/', demo: 'https://andvarlop.github.io/AUDITAPP/' },
   { github: 'https://github.com/AndVarlop/AlexandraReposteria1/', demo: 'https://andvarlop.github.io/AlexandraReposteria1/' },
   { github: 'https://github.com/AndVarlop/ZonaABC', demo: 'https://andvarlop.github.io/ZonaABC/' },
-  { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/Blog/' },
   { github: 'https://github.com/AndVarlop', demo: 'https://andvarlop.github.io/DetectorAndVar/' },
 ]
 
