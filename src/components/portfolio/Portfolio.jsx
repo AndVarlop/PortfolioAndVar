@@ -34,7 +34,7 @@ const Portfolio = () => {
 
         <div className='portfolio__grid'>
           {pf.projects.map((project, i) => (
-            <article key={i} className='project'>
+            <article key={i} className='project scroll-reveal' data-scroll-delay={i * 120}>
               <div className='project__image'>
                 <img src={images[i]} alt={project.title} />
                 <div className='project__image-overlay'>
