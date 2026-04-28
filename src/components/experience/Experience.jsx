@@ -37,7 +37,7 @@ const Experience = () => {
   }
 
   const SkillBar = ({ skill }) => (
-    <div className='skill-bar'>
+    <div className='skill-bar scroll-reveal' data-scroll-delay='50'>
       <div className='skill-bar__header'>
         <span className='skill-bar__name'>{skill.name}</span>
         <span className='skill-bar__level'>{skill.level === 'experienced' ? 'Expert' : skill.level === 'intermediate' ? 'Proficient' : 'Familiar'}</span>
@@ -45,7 +45,7 @@ const Experience = () => {
       <div className='skill-bar__track'>
         <div
           className='skill-bar__fill'
-          style={{ width: `${getLevelPercent(skill.level)}%` }}
+          style={{ '--skill-width': `${getLevelPercent(skill.level)}%` }}
         ></div>
       </div>
     </div>
@@ -84,7 +84,7 @@ const Experience = () => {
           </h3>
           <div className='experience__timeline'>
             {ex.roles.map((role, i) => (
-              <article key={i} className='work-item'>
+              <article key={i} className='work-item scroll-reveal' data-scroll-delay={i * 100}>
                 <div className='work-item__head'>
                   <h4>{role.title}</h4>
                   <span className='work-item__date'>{role.date}</span>

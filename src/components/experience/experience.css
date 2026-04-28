@@ -76,8 +76,24 @@
     height: 100%;
     background: var(--gradient-primary);
     border-radius: 99px;
-    transition: width 0.8s ease;
+    width: 0;
     box-shadow: 0 0 12px rgba(96, 165, 250, 0.4);
+    animation: skill-fill 1.2s ease-out forwards;
+}
+
+.skill-bar.is-visible .skill-bar__fill {
+    animation: skill-fill 1.2s ease-out forwards;
+}
+
+@keyframes skill-fill {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: var(--skill-width, 100%);
+        opacity: 1;
+    }
 }
 
 /* ===== WORK EXPERIENCE ===== */

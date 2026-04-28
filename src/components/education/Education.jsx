@@ -10,12 +10,12 @@ const Education = () => {
   return (
     <section id='education'>
       <div className='container'>
-        <span className='section__eyebrow'>{ed.subtitle}</span>
-        <h2 className='section__title'>
+        <span className='section__eyebrow scroll-reveal'>{ed.subtitle}</span>
+        <h2 className='section__title scroll-reveal'>
           <span className='accent'>{ed.title}</span>
         </h2>
 
-        <div className='education__grid'>
+        <div className='education__grid scroll-reveal'>
           {/* DEGREES */}
           <div className='edu-block'>
             <div className='edu-block__head'>

@@ -37,10 +37,10 @@ const About = () => {
   return (
     <section id='about'>
       <div className='container'>
-        <span className='section__eyebrow'>{ab.subtitle}</span>
-        <h2 className='section__title'>{ab.title.split(' ')[0]} <span className='accent'>{ab.title.split(' ').slice(1).join(' ')}</span></h2>
+        <span className='section__eyebrow scroll-reveal'>{ab.subtitle}</span>
+        <h2 className='section__title scroll-reveal'>{ab.title.split(' ')[0]} <span className='accent'>{ab.title.split(' ').slice(1).join(' ')}</span></h2>
 
-        <div className='about__container'>
+        <div className='about__container scroll-reveal'>
           <div className='about__image'>
             <div className='about__image-inner'>
               <img src={ME} alt='Andres Varela' />
