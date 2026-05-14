@@ -154,6 +154,16 @@ export const translations = {
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
         },
         {
+          title: 'Antojitos SA',
+          desc: 'Snacks that brighten up your office. Transform your space with modern and elegant curtains.',
+          tech: ['Angular', 'Node.js', 'PostgreSQL', 'JavaScript']
+        },
+        {
+          title: 'Jose Mendoza ',
+          desc: 'Local food delivery service with real-time order tracking and customer reviews.',
+          tech: ['Vercel', 'Angular', 'Node.js', 'PostgreSQL', 'JavaScript']
+        },
+        {
           title: 'MeloPictures',
           desc: 'Personal photography portfolio with categorized galleries and a clean, immersive viewing experience.',
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
@@ -173,12 +183,6 @@ export const translations = {
           desc: 'Educational platform with structured learning resources, interactive content, and student progress tracking.',
           tech: ['HTML', 'CSS', 'PHP', 'MySQL']
         },
-
-        {
-          title: 'Object Detector',
-          desc: 'Real-time AI-powered object detection running in the browser using TensorFlow.js and a webcam feed.',
-          tech: ['JavaScript', 'TensorFlow.js']
-        }
       ]
     },
     testimonials: {
@@ -360,8 +364,18 @@ export const translations = {
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
         },
         {
+          title: 'Antojitos SA',
+          desc: 'Los antojitos que alegran tu oficina. Servicio local de entrega de comida con seguimiento de pedidos en tiempo real y reseñas de clientes.',
+          tech: ['Angular', 'Node.js', 'PostgreSQL', 'JavaScript']
+        },
+        {
+          title: 'Jose Mendoza ',
+          desc: 'Servicio local de entrega de comida con seguimiento de pedidos en tiempo real y reseñas de clientes.',
+          tech: ['Vercel', 'Angular', 'Node.js', 'PostgreSQL', 'JavaScript']
+        },
+        {
           title: 'MeloPictures',
-          desc: 'Portafolio fotográfico personal con galerías categorizadas y una experiencia de visualización limpia e inmersiva.',
+          desc: 'Transforma tus espacios con cortinas modernas y elegantes.',
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
         },
         {
@@ -379,12 +393,6 @@ export const translations = {
           desc: 'Plataforma educativa con recursos de aprendizaje estructurados, contenido interactivo y seguimiento de progreso.',
           tech: ['HTML', 'CSS', 'PHP', 'MySQL']
         },
-
-        {
-          title: 'Object Detector',
-          desc: 'Detección de objetos en tiempo real con IA directamente en el navegador usando TensorFlow.js y cámara web.',
-          tech: ['JavaScript', 'TensorFlow.js']
-        }
       ]
     },
     testimonials: {
