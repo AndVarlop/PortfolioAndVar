@@ -7,19 +7,20 @@ import MeloPictures from '../../assets/MeloPictures.png'
 import LaCaleta from '../../assets/Captura-LaCaleta.png'
 import AntojitosSA from '../../assets/Antojitos-SA.png'
 import JoseMendoza from '../../assets/JoseMendoza.png'
+import AndVarArcade from '../../assets/AndVarArcade.png'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 import { useLanguage } from '../../context/useLanguage'
 
-const images = [LaCaleta, AntojitosSA, JoseMendoza, MeloPictures, Auditapp, Reposteria, ZonaABC]
+const images = [AndVarArcade, LaCaleta, AntojitosSA, JoseMendoza, MeloPictures, Auditapp, Reposteria, ZonaABC]
 
 const links = [
+  { github: 'https://github.com/AndVarlop/AndVarArcade', demo: 'https://andvararcade.devandvar.com/' },
   { github: 'https://github.com/AndVarlop/La-Caleta', demo: 'https://La-Caleta.devandvar.com/' },
   { github: 'https://github.com/AndVarlop/Antojitos-SA', demo: 'https://Antojitos-SA.devandvar.com/' },
   { github: 'https://github.com/AndVarlop/JoseMendoza', demo: 'https://jose-mendoza.vercel.app/' },
   { github: 'https://github.com/AndVarlop/MeloPictures', demo: 'https://andvarlop.github.io/MeloPictures/' },
   { github: 'https://github.com/AndVarlop/AUDITAPP/', demo: 'https://andvarlop.github.io/AUDITAPP/' },
   { github: 'https://github.com/AndVarlop/AlexandraReposteria1/', demo: 'https://andvarlop.github.io/AlexandraReposteria1/' },
-  { github: 'https://github.com/AndVarlop/ZonaABC', demo: 'https://andvarlop.github.io/ZonaABC/' },
 ]
 
 const Portfolio = () => {

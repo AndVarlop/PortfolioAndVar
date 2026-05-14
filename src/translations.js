@@ -149,6 +149,11 @@ export const translations = {
       liveDemo: 'Live Demo',
       projects: [
         {
+          title: 'AndVar Arcade',
+          desc: 'Online arcade game with modern graphics and exciting gameplay mechanics.',
+          tech: ['React', 'HTML', 'CSS', 'JavaScript', 'Vite']
+        },
+        {
           title: 'La Caleta',
           desc: 'Manage your money with La Caleta, track your account balances, log your expenses and income, and keep your finances organized with this personal financial management app.',
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
@@ -177,11 +182,6 @@ export const translations = {
           title: 'Alexandra Repostería',
           desc: 'Full business website for a bakery — product catalog, custom orders, and responsive design.',
           tech: ['HTML', 'CSS', 'JavaScript']
-        },
-        {
-          title: 'ZonaABC',
-          desc: 'Educational platform with structured learning resources, interactive content, and student progress tracking.',
-          tech: ['HTML', 'CSS', 'PHP', 'MySQL']
         },
       ]
     },
@@ -359,6 +359,11 @@ export const translations = {
       liveDemo: 'Demo en Vivo',
       projects: [
         {
+          title: 'AndVar Arcade',
+          desc: 'Juego de arcade en línea con gráficos modernos y mecánicas de juego emocionantes.',
+          tech: ['React', 'HTML', 'CSS', 'JavaScript', 'Vite']
+        },
+        {
           title: 'La Caleta',
           desc: 'Administra tu dinero con La Caleta, observa el balance de tus cuentas, registra tus gastos e ingresos, y mantén tus finanzas organizadas con esta aplicación de gestión financiera personal.',
           tech: ['Angular', 'SupaBase', 'HTML', 'CSS', 'JavaScript']
@@ -387,11 +392,6 @@ export const translations = {
           title: 'Alexandra Repostería',
           desc: 'Sitio web empresarial para pastelería — catálogo de productos, pedidos personalizados y diseño responsivo.',
           tech: ['HTML', 'CSS', 'JavaScript']
-        },
-        {
-          title: 'ZonaABC',
-          desc: 'Plataforma educativa con recursos de aprendizaje estructurados, contenido interactivo y seguimiento de progreso.',
-          tech: ['HTML', 'CSS', 'PHP', 'MySQL']
         },
       ]
     },
