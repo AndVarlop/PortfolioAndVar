@@ -29,8 +29,8 @@ const Nav = () => {
     <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className='navbar__inner'>
         <a href='#' className='navbar__logo'>
-          <span className='navbar__logo-mark'>AV</span>
-          <span className='navbar__logo-text'>AndVarLop</span>
+          <img src="/DAVos.png" alt="DAV logo" className='navbar__logo-img' />
+          <span className='navbar__logo-text'>DevAndVar</span>
         </a>
 
         <ul className={`navbar__links ${open ? 'is-open' : ''}`}>
